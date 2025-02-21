@@ -1,0 +1,97 @@
+{
+    "Figure": {
+        "prefix": "fig",
+        "body": [
+            "<figure>",
+            "\t<img style=\"max-height:80vh;\" src=\"$1\">",
+            "\t<figcaption>$2</figcaption>",
+            "</figure>",
+            "",
+            "$0"
+        ],
+        "description": "Insert figure"
+    },
+    "Inline Math": {
+        "prefix": "m",
+        "body": "\\\\\\($1\\\\\\) $0",
+        "description": "Inline math."
+    },
+    "Block Math": {
+        "prefix": "mm",
+        "body": [
+            "\\$\\$",
+            "$1",
+            "\\$\\$",
+            "",
+            "$0"
+        ],
+        "description": "Block math."
+    },
+    "Block Math Aligned": {
+        "prefix": "mma",
+        "body": [
+            "\\$\\$",
+            "\\begin{align}",
+            "$1",
+            "\\end{align}",
+            "\\$\\$",
+            "",
+            "$0"
+        ],
+        "description": "Block math."
+    },
+    "date": {
+        "prefix": "date",
+        "body": "$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+        "description": "Insert today's date."
+    },
+    "hugo": {
+        "prefix": "hugo",
+        "body": [
+            "---",
+            "title: \"$1\"",
+            "date: \"$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE\"",
+            "categories:",
+            "  - $2",
+            "tags:",
+            "  - $3",
+            "toc: true",
+            "math: true",
+            "next: true",
+            "weight: 10",
+            "---",
+            "",
+            "$0"
+        ],
+        "description": "Hugo post head."
+    },
+    "2img": {
+        "prefix": "2img",
+        "body": "{{< twoimg \"$1\" \"./$2\" \"./$0\" >}}",
+        "description": "Hugo two images shortcode"
+    },
+    "ref": {
+        "prefix": "ref",
+        "body": [
+            "<sup id=\"$1\">[[$2]](#$1-ref)</sup>$0",
+            "- <small id=\"$1-ref\">[[$2]](#$1) This is a note.</small>"
+        ],
+        "description": "Markdown reference."
+    },
+    "hl": {
+        "prefix": "hl",
+        "body": "{linenos=inline,hl_lines=[2, \"4-6\"$0],linenostart=1}"
+    },
+    "lines": {
+        "prefix": "lines",
+        "body": "{linenos=inline}"
+    },
+    "break": {
+        "prefix": "br",
+        "body": "<br>"
+    },
+    "bold": {
+        "prefix": "bb",
+        "body": "**$0**"
+    }
+}

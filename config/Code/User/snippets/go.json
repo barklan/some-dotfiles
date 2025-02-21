@@ -1,0 +1,85 @@
+{
+    "zerolog": {
+        "prefix": "zz",
+        "body": "\"github.com/rs/zerolog/log\"$0"
+    },
+    "Log Error": {
+        "prefix": "le",
+        "body": "log.Error().Err(err).Msg(\"$0\")",
+        "description": "Log non-critical error."
+    },
+    "err": {
+        "prefix": "e",
+        "body": "err$0"
+    },
+    "string": {
+        "prefix": "s",
+        "body": "string$0",
+        "description": "string"
+    },
+    "[]byte": {
+        "prefix": "b",
+        "body": "[]byte$0"
+    },
+    "int": {
+        "prefix": "i",
+        "body": "int$0"
+    },
+    "int64": {
+        "prefix": "ii",
+        "body": "int64$0"
+    },
+    "float64": {
+        "prefix": "f",
+        "body": "float64$0"
+    },
+    "todo": {
+        "prefix": "todo",
+        "body": "// TODO: $0",
+        "description": "TODO: comment"
+    },
+    "fix": {
+        "prefix": "fix",
+        "body": "// FIX: $0",
+        "description": "FIX: comment"
+    },
+    "note": {
+        "prefix": "note",
+        "body": "// NOTE: $0",
+        "description": "NOTE comment"
+    },
+    "main": {
+        "prefix": "main",
+        "body": [
+            "package main\n",
+            "func main() {\n\t$0\n}"
+        ],
+        "description": "package main"
+    },
+    "fmt.Sprintf": {
+        "prefix": "sf",
+        "body": "fmt.Sprintf(\"$1\", $0)",
+        "description": "Sprintf"
+    },
+    "fmt.Errorf": {
+        "prefix": "ef",
+        "body": "fmt.Errorf(\"$0: %w\", err)",
+        "description": "Wrapped error."
+    },
+    "; err != nil {}": {
+        "prefix": "ern",
+        "body": "err != nil {\n\t$0\n}"
+    },
+    "fn": {
+        "prefix": "fn",
+        "body": "func $1($2) $0 {\n}"
+    },
+    "forup": {
+        "prefix": "forup",
+        "body": "for i := 0; i < $1; i++ {\n\t$0\n}"
+    },
+    "pp": {
+        "prefix": "fp",
+        "body": "fmt.Println($0)"
+    }
+}

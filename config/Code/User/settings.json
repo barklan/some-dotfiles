@@ -1,0 +1,539 @@
+{
+    "vscode-neovim.compositeKeys": {
+        "kj": {
+            "command": "vscode-neovim.lua",
+            "args": [
+                "vim.api.nvim_input('<ESC>')\nrequire('vscode-neovim').action('workbench.action.files.save')"
+            ]
+        }
+    },
+    "go.testFlags": [
+        "-v",
+        "-short"
+    ],
+    "editor.renderWhitespace": "none",
+    "editor.acceptSuggestionOnEnter": "off",
+    "workbench.enableExperiments": false,
+    "window.enableMenuBarMnemonics": false,
+    "python.formatting.blackArgs": [
+        "-l 90"
+    ],
+    "editor.lineNumbers": "relative",
+    "terminal.integrated.tabs.enabled": false,
+    "emmet.includeLanguages": {
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "python.analysis.completeFunctionParens": true,
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        },
+        // "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "[git-commit]": {
+        "editor.rulers": [
+            50,
+            72
+        ],
+        "workbench.editor.restoreViewState": false
+    },
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Iosevka', 'Fira Code Retina', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "security.workspace.trust.untrustedFiles": "open",
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.wordBasedSuggestions": "matchingDocuments",
+        "editor.snippetSuggestions": "top"
+    },
+    "[go]": {
+        "editor.tabSize": 4
+    },
+    "[javascript]": {
+        "editor.tabSize": 4
+    },
+    // "[latex]": {
+    //     "editor.rulers": [
+    //         90
+    //     ],
+    //     "editor.wordWrap": "wordWrapColumn"
+    // },
+    "editor.scrollbar.horizontal": "hidden",
+    "task.problemMatchers.neverPrompt": {
+        "shell": true
+    },
+    "javascript.preferences.quoteStyle": "single",
+    "python.analysis.autoImportCompletions": false,
+    "editor.wordWrapColumn": 90,
+    "workbench.list.automaticKeyboardNavigation": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.toggleSidebarVisibility",
+        "workbench.actions.view.problems",
+        "workbench.action.nextEditor",
+        "workbench.action.PreviousEditor",
+        "workbench.view.explorer",
+        "workbench.action.terminal.openNativeConsole",
+        "workbench.action.terminal.goToRecentDirectory",
+        "notifications.clearAll"
+    ],
+    "workbench.startupEditor": "none",
+    "editor.lightbulb.enabled": "off",
+    "workbench.editor.pinnedTabSizing": "compact",
+    "workbench.editor.limit.enabled": true,
+    "editor.suggest.localityBonus": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.inlineSuggest.enabled": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "redhat.telemetry.enabled": false,
+    "editor.suggest.preview": true,
+    "workbench.editor.closeOnFileDelete": true,
+    "notebook.consolidatedRunButton": true,
+    "latex-workshop.view.pdf.viewer": "browser",
+    "latex-workshop.latex.magic.args": [
+        "-shell-escape",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-shell-escape",
+                "-xelatex",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        }
+    ],
+    "latex-workshop.message.error.show": false,
+    "latex-workshop.message.warning.show": false,
+    "latex-workshop.latex.autoBuild.interval": 5000,
+    "latex-workshop.latex.rootFile.doNotPrompt": true,
+    "latex-workshop.latex.rootFile.useSubFile": false,
+    "terminal.integrated.showExitAlert": false,
+    "files.watcherExclude": {
+        "**/.cache/**": true,
+        "**/vendor/*/**": true,
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "search.exclude": {
+        "**/__pypackages__/**": true,
+        "**/.cache/**": true,
+        "**/.pnpm": true,
+        "**/dist/**": true,
+        "**/go.sum": true,
+        "**/out/**": true,
+        "**/package-lock.json": true,
+        "**/pnpm-lock.yaml": true,
+        "**/tmp": true,
+        "**/vendor": true
+    },
+    "go.useLanguageServer": true,
+    "gopls": {
+        "ui.navigation.symbolScope": "workspace",
+        "ui.diagnostic.staticcheck": true,
+        "uinavigation.symbolMatcher": "Fuzzy",
+        "ui.completion.matcher": "Fuzzy",
+        "ui.semanticTokens": true,
+        "usePlaceholders": false,
+        "formatting.gofumpt": true,
+        "analyses": {
+            "shadow": false,
+            "unusedparams": true,
+            "nilness": true,
+            "unusedwrite": true
+        },
+        "buildFlags": [
+            "-tags=wireinject,e2e"
+        ]
+    },
+    // "go.inlayHints.assignVariableTypes": false,
+    // "go.inlayHints.compositeLiteralFields": true,
+    // "go.inlayHints.compositeLiteralTypes": false,
+    // "go.inlayHints.constantValues": true,
+    // "go.inlayHints.functionTypeParameters": true,
+    // "go.inlayHints.parameterNames": true,
+    // "go.inlayHints.rangeVariableTypes": true,
+    "task.autoDetect": "off",
+    "security.workspace.trust.enabled": false,
+    "git.enableSmartCommit": true,
+    "git.enableCommitSigning": true,
+    "git.showUnpublishedCommitsButton": "never",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "git.pruneOnFetch": true,
+    "files.associations": {
+        "*.env": "properties",
+        "justfile": "shellscript"
+    },
+    "go.editorContextMenuCommands": {
+        "toggleTestFile": false,
+        "addTags": false,
+        "testAtCursor": false,
+        "generateTestForFunction": false,
+        "addImport": false,
+        "testCoverage": false,
+        "playground": false,
+        "debugTestAtCursor": false
+    },
+    "window.restoreFullscreen": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right"
+    },
+    "notebook.insertToolbarLocation": "hidden",
+    "window.customMenuBarAltFocus": false,
+    "markdown.preview.doubleClickToSwitchToEditor": false,
+    "errorLens.enabledDiagnosticLevels": [
+        "error",
+        "warning"
+    ],
+    "jupyter.askForKernelRestart": false,
+    "errorLens.messageMaxChars": 70,
+    "jupyter.showOutlineButtonInNotebookToolbar": false,
+    "protoc": {
+        "path": "/usr/bin/protoc",
+        "compile_on_save": false,
+        "options": [
+            "--proto_path=protos/v3",
+            "--proto_path=protos/v2",
+            "--proto_path=${workspaceRoot}/proto",
+            "--proto_path=${env.GOPATH}/src",
+            "--java_out=gen/java"
+        ]
+    },
+    "errorLens.scrollbarHackEnabled": true,
+    "where-am-i.textTransfrom": "none",
+    "where-am-i.colorful": false,
+    "shellcheck.customArgs": [
+        "-x"
+    ],
+    "markdown.preview.fontFamily": "'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+    "markdown.preview.lineHeight": 1.5,
+    "markdown.preview.typographer": true,
+    "terminal.integrated.fontFamily": "'Iosevka Term'",
+    "editor.find.addExtraSpaceOnTop": false,
+    "extensions.ignoreRecommendations": true,
+    "editor.scrollbar.verticalScrollbarSize": 10,
+    "window.zoomLevel": 0.45,
+    "terminal.integrated.enablePersistentSessions": false,
+    "workbench.colorCustomizations": {
+        "[GitHub Light Monochrome]": {
+            "panel.border": "#afafaf",
+            "statusBar.border": "#afafaf",
+            "sideBar.border": "#afafaf"
+        },
+        "[GitHub Dark]": {
+            "panel.border": "#334155",
+            "sideBar.border": "#283342",
+            "statusBar.border": "#283342"
+        },
+        "[Tokyo Night]": {
+            "foreground": "#959cbd",
+            "panelTitle.activeBorder": "#3d59a1",
+            "panelTitle.activeForeground": "#bdc7f0",
+            "panelTitle.inactiveForeground": "#959cbd",
+            "tab.activeForeground": "#bdc7f0",
+            "tab.inactiveForeground": "#959cbd",
+            "breadcrumb.foreground": "#959cbd",
+            "breadcrumb.focusForeground": "#bdc7f0",
+            "breadcrumb.activeSelectionForeground": "#bdc7f0",
+            "statusBar.foreground": "#bdc7f0",
+            "list.focusForeground": "#bdc7f0",
+            "list.hoverForeground": "#bdc7f0",
+            "list.activeSelectionForeground": "#bdc7f0",
+            "list.inactiveSelectionForeground": "#bdc7f0",
+            "list.inactiveSelectionBackground": "#202330",
+            "sideBar.foreground": "#959cbd",
+            "dropdown.foreground": "#959cbd",
+            "menu.foreground": "#bdc7f0",
+            "menubar.selectionForeground": "#bdc7f0",
+            "input.foreground": "#959cbd",
+            "input.placeholderForeground": "#959cbd",
+            "activityBar.foreground": "#bdc7f0",
+            "activityBar.inactiveForeground": "#787c99",
+            "gitDecoration.ignoredResourceForeground": "#696d87",
+            "editorCodeLens.foreground": "#7982a9",
+        },
+    },
+    "editor.tokenColorCustomizations": {
+        "[GitHub Light]": {
+            "comments": "#A0522D"
+        },
+        "[GitHub Dark]": {
+            "comments": {
+                "foreground": "#ffd3eb",
+                "fontStyle": "bold"
+            }
+        },
+        "[GitHub Dark Default]": {
+            "comments": {
+                "foreground": "#f778ba",
+                "fontStyle": "bold"
+            }
+        },
+        "[Tokyo Night]": {
+            "comments": {
+                "foreground": "#f778ba",
+                // "fontStyle": "bold"
+            }
+        },
+        "[GitHub Dark Colorblind (Beta)]": {
+            "comments": {
+                "foreground": "#f778ba"
+                // "fontStyle": "bold"
+            }
+        },
+        "[GitHub Light Monochrome]": {
+            "comments": "#a05001"
+        },
+        "[GitHub Light Monochrome Focused]": {
+            "comments": "#a05001"
+        },
+        "[Tokyo Night Storm]": {
+            "comments": "#bc6942"
+        },
+        "[Default Dark Modern]": {
+            "comments": {
+                "foreground": "#f778ba",
+                "fontStyle": "bold"
+            }
+        }
+    },
+    "terminal.integrated.tabs.location": "left",
+    "terminal.integrated.tabs.hideCondition": "never",
+    "editor.unicodeHighlight.allowedLocales": {
+        "ru": true
+    },
+    "telemetry.telemetryLevel": "off",
+    "python.autoComplete.extraPaths": [
+        "__pypackages__/3.10/lib"
+    ],
+    "python.analysis.extraPaths": [
+        "__pypackages__/3.10/lib"
+    ],
+    "python.terminal.activateEnvironment": false,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.accessibilitySupport": "off",
+    "explorer.fileNesting.patterns": {
+        "*.ts": "$(capture).js, $(capture).*.ts",
+        "*.js": "$(capture).js.map, $(capture).min.js, $(capture).d.ts",
+        "*.jsx": "$(capture).js",
+        "*.tsx": "$(capture).ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, .npmrc, yarn.lock, .yarnrc, pnpm-lock.yaml",
+        "go.mod": ".air*, go.sum",
+        "pyproject.toml": ".pdm.toml, pdm.lock",
+        "*.tex": "$(capture).out, $(capture).xdv, $(capture).aux, $(capture).log, $(capture).fls, $(capture).synctex.gz, $(capture).fdb_latexmk, $(capture).ind, $(capture).ilg, $(capture).idx, $(capture).toc, $(capture).bcf, $(capture).run.xml",
+        "favicon.ico": "favicon-*.png, apple-touch-icon.png, android-chrome-*.png, android-icon-*.png, apple-icon.png, apple-icon-*.png, ms-icon-*.png",
+        "build.sbt": ".scalafmt.conf, build.sc, mill"
+    },
+    "notebook.breadcrumbs.showCodeCells": false,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.pytest_cache": true
+    },
+    "git.postCommitCommand": "push",
+    "go.lintFlags": [
+        "--fast"
+    ],
+    "go.lintTool": "golangci-lint",
+    "go.addTags": {
+        "tags": "json",
+        "options": "json=omitempty",
+        "promptForTags": false,
+        "transform": "snakecase",
+        "template": ""
+    },
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1,
+        "vscodevim.vim": 1
+    },
+    "breadcrumbs.symbolPath": "last",
+    "typescript.format.semicolons": "insert",
+    "files.autoSave": "afterDelay",
+    "notebook.globalToolbar": false,
+    "notebook.showCellStatusBar": "hidden",
+    "notebook.lineNumbers": "on",
+    "editor.wordBasedSuggestionsMode": "allDocuments",
+    "explorer.fileNesting.enabled": false,
+    "terminal.integrated.tabs.showActions": "never",
+    "terminal.integrated.tabs.showActiveTerminal": "never",
+    "vscode-neovim.useCtrlKeysForNormalMode": false,
+    "javascript.inlayHints.parameterNames.enabled": "all",
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "typescript.inlayHints.parameterNames.enabled": "all",
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "workbench.editor.limit.value": 5,
+    "Lua.telemetry.enable": false,
+    "editor.smoothScrolling": true,
+    "editor.tabCompletion": "on",
+    "editor.bracketPairColorization.enabled": false,
+    "notebook.markup.fontSize": 14,
+    "debug.disassemblyView.showSourceCode": false,
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "git-commit",
+        "html",
+        "latex",
+        "markdown",
+        "plaintext",
+        "restructuredtext",
+        "text",
+        "vue"
+    ],
+    "notebook.showFoldingControls": "never",
+    "cSpell.language": "en,de-DE,ru",
+    "files.insertFinalNewline": true,
+    "flake8.logLevel": "warn",
+    "flake8.args": [
+        "--ignore",
+        "E501"
+    ],
+    "rust-analyzer.inlayHints.maxLength": 16,
+    "go.inlayHints.compositeLiteralFields": true,
+    "go.inlayHints.parameterNames": true,
+    "go.inlayHints.assignVariableTypes": true,
+    "python.testing.pytestEnabled": true,
+    "workbench.localHistory.enabled": false,
+    "go.inlayHints.rangeVariableTypes": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "editor.guides.bracketPairsHorizontal": false,
+    "workbench.tree.renderIndentGuides": "always",
+    "rust-analyzer.hover.actions.debug.enable": false,
+    "rust-analyzer.hover.actions.run.enable": false,
+    "rust-analyzer.inlayHints.renderColons": false,
+    "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "with_block",
+    "rust-analyzer.lens.debug.enable": false,
+    "rust-analyzer.lens.run.enable": false,
+    "rust-analyzer.restartServerOnConfigChange": true,
+    "git.openRepositoryInParentFolders": "never",
+    "debug.console.fontSize": 12,
+    "editor.cursorBlinking": "solid",
+    "go.languageServerFlags": [
+        "-remote=auto",
+        "-remote.listen.timeout=15m"
+    ],
+    "switchConfig.darkTheme": "Tokyo Night Storm",
+    "switchConfig.lightTheme": "Tokyo Night Light",
+    "switchConfig.darkTime": "18:00",
+    "switchConfig.lightTime": "9:00",
+    "switchConfig.open": true,
+    "editor.stickyScroll.maxLineCount": 3,
+    "editor.stickyScroll.enabled": true,
+    "window.dialogStyle": "custom",
+    "workbench.editor.enablePreview": false,
+    "editor.wordWrap": "on",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.activityBar.location": "top",
+    "errorLens.delayMode": "debounce",
+    "window.menuBarVisibility": "hidden",
+    "explorer.compactFolders": false,
+    "vscode-neovim.ctrlKeysForInsertMode": [
+        "a",
+        "c",
+        "d",
+        "h",
+        "j",
+        "o",
+        "r",
+        "t",
+        "u",
+        "e"
+    ],
+    "window.commandCenter": false,
+    "workbench.productIconTheme": "icons-carbon",
+    "window.title": "${rootName}${separator}VSC",
+    "vscode-neovim.ctrlKeysForNormalMode": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "o",
+        "r",
+        "t",
+        "u",
+        "v",
+        "x",
+        "y",
+        "z",
+        "/",
+        "]",
+        "right",
+        "left",
+        "up",
+        "down",
+        "backspace",
+        "delete"
+    ],
+    "hexeditor.columnWidth": 20,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.defaultEndianness": "little",
+    "hexeditor.inspectorType": "aside",
+    "go.inlayHints.constantValues": true,
+    "go.survey.prompt": false,
+    "editor.inlayHints.fontFamily": "Iosevka Light",
+    "editor.inlayHints.fontSize": 13.5,
+    "errorLens.enabledInMergeConflict": false,
+    "errorLens.fontSize": "13.5",
+    "errorLens.fontStyleItalic": true,
+    "errorLens.removeLinebreaks": false,
+    "errorLens.messageBackgroundMode": "message",
+    "editor.minimap.autohide": true,
+    "editor.showFoldingControls": "never",
+    "workbench.quickOpen.preserveInput": true,
+    "search.quickOpen.history.filterSortOrder": "recency",
+    "search.quickOpen.includeHistory": false,
+    "search.smartCase": true,
+    "git.branchProtection": [
+        "release"
+    ],
+    "git.enableStatusBarSync": false,
+    "git.showPushSuccessNotification": true,
+    "terminal.integrated.shellIntegration.enabled": false,
+    "terminal.explorerKind": "external",
+    "todo-tree.general.showActivityBarBadge": true,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIX",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.tree.tagsOnly": true,
+    "workbench.editor.tabActionCloseVisibility": false,
+    "editor.matchBrackets": "never",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.tree.indent": 14,
+    "http.proxyStrictSSL": false,
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.silentNotifications": false,
+    "diffEditor.ignoreTrimWhitespace": true
+}

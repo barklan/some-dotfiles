@@ -1,0 +1,12 @@
+{
+	"TODO": {
+		"prefix": "todo",
+		"body": "$LINE_COMMENT TODO: $0",
+		"description": "TODO: comment"
+	},
+	"FIX": {
+		"prefix": "fix",
+		"body": "$LINE_COMMENT FIX: $0",
+		"description": "FIX: comment"
+	}
+}

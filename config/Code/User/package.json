@@ -1,0 +1,56 @@
+{
+    "name": "local-vscode-snippets",
+    "engines": {
+        "vscode": "^1.11.0"
+    },
+    "contributes": {
+        "snippets": [
+            {
+                "language": [
+                    "gitcommit",
+                    "NeogitCommitMessage"
+                ],
+                "path": "./snippets/git-commit.json"
+            },
+            {
+                "language": [
+                    "just"
+                ],
+                "path": "./snippets/justfile.json"
+            },
+            {
+                "language": [
+                    "shellscript",
+                    "shell",
+                    "sh",
+                    "zsh"
+                ],
+                "path": "./snippets/shellscript.json"
+            },
+            {
+                "language": [
+                    "go"
+                ],
+                "path": "./snippets/go.json"
+            },
+            {
+                "language": [
+                    "lua"
+                ],
+                "path": "./snippets/lua.json"
+            },
+            {
+                "language": [
+                    "python"
+                ],
+                "path": "./snippets/python.json"
+            },
+            {
+                "language": [
+                    "markdown"
+                ],
+                "path": "./snippets/markdown.json"
+            }
+        ]
+    }
+}
